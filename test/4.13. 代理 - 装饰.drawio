@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net" modified="2023-06-01T09:51:55.959Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="isquicbOJXEFLheumC5q" version="21.1.9" type="device">
+  <diagram name="第 1 页" id="V1W0sLbI2GgZeyCbVdQ1">
+    <mxGraphModel dx="1194" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WFYV-QFJoavZbaiG5XtV-6" value="ConcreteComponent" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="340" width="150" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WFYV-QFJoavZbaiG5XtV-7" value="+ operation()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="WFYV-QFJoavZbaiG5XtV-6" vertex="1">
+          <mxGeometry y="29" width="150" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="WFYV-QFJoavZbaiG5XtV-9" value="Decorator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="450" y="340" width="170" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="WFYV-QFJoavZbaiG5XtV-10" value="+ operation()&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="WFYV-QFJoavZbaiG5XtV-9" vertex="1">
+          <mxGeometry y="29" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="WFYV-QFJoavZbaiG5XtV-13" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;this.component.operation();&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;// some code...&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=middle;align=left;labelPosition=center;verticalLabelPosition=middle;" parent="1" vertex="1">
+          <mxGeometry x="572" y="410" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WFYV-QFJoavZbaiG5XtV-14" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;edgeStyle=elbowEdgeStyle;elbow=vertical;dashed=1;dashPattern=8 8;labelBackgroundColor=none;fontColor=default;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="WFYV-QFJoavZbaiG5XtV-6" target="WFYV-QFJoavZbaiG5XtV-22" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="230" y="310" as="sourcePoint" />
+            <mxPoint x="362.5" y="244" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFYV-QFJoavZbaiG5XtV-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;endSize=10;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="WFYV-QFJoavZbaiG5XtV-17" target="WFYV-QFJoavZbaiG5XtV-22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="217" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFYV-QFJoavZbaiG5XtV-17" value="Client" style="html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="198.38" width="87" height="37.25" as="geometry" />
+        </mxCell>
+        <mxCell id="WFYV-QFJoavZbaiG5XtV-20" value="" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;startArrow=oval;startFill=0;startSize=8;endArrow=none;rounded=0;dashed=1;dashPattern=8 8;entryX=0;entryY=0;entryDx=72.5;entryDy=0;entryPerimeter=0;exitX=0.471;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="WFYV-QFJoavZbaiG5XtV-13" edge="1">
+          <mxGeometry x="-0.0549" y="19" relative="1" as="geometry">
+            <mxPoint x="542.0699999999999" y="381.5" as="sourcePoint" />
+            <mxPoint x="254.21388888888896" y="450" as="targetPoint" />
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFYV-QFJoavZbaiG5XtV-21" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;edgeStyle=elbowEdgeStyle;elbow=vertical;dashed=1;dashPattern=8 8;labelBackgroundColor=none;fontColor=default;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="WFYV-QFJoavZbaiG5XtV-9" target="WFYV-QFJoavZbaiG5XtV-22" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="245" y="330" as="sourcePoint" />
+            <mxPoint x="362.5" y="244" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WFYV-QFJoavZbaiG5XtV-22" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Component&lt;/b&gt;&lt;/i&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;i&gt;+ operation()&lt;/i&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="184.01" width="145" height="65.99" as="geometry" />
+        </mxCell>
+        <mxCell id="Cdix8fmBXvMTgI7DNDWX-2" value="&lt;font color=&quot;#ff3333&quot;&gt;component&lt;/font&gt;" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;entryX=1.007;entryY=0.379;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryPerimeter=0;strokeColor=#FF3333;" edge="1" parent="1" source="WFYV-QFJoavZbaiG5XtV-9" target="WFYV-QFJoavZbaiG5XtV-22">
+          <mxGeometry x="-0.9044" y="14" relative="1" as="geometry">
+            <mxPoint x="780" y="216.51" as="sourcePoint" />
+            <mxPoint x="570" y="216.51" as="targetPoint" />
+            <mxPoint y="1" as="offset" />
+            <Array as="points">
+              <mxPoint x="660" y="354" />
+              <mxPoint x="660" y="209" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

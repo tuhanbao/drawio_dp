@@ -1,0 +1,53 @@
+<mxfile host="app.diagrams.net" modified="2023-06-02T08:42:29.346Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="Wf-lB5_zo0c5OHSWgXi0" version="21.1.9" type="device">
+  <diagram name="第 1 页" id="V1W0sLbI2GgZeyCbVdQ1">
+    <mxGraphModel dx="1194" dy="682" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="H41NvJang9ZAcuZ1YOfE-1" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;edgeStyle=elbowEdgeStyle;elbow=vertical;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;" edge="1" parent="1" source="H41NvJang9ZAcuZ1YOfE-5" target="H41NvJang9ZAcuZ1YOfE-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="497" y="492.5" as="sourcePoint" />
+            <mxPoint x="497" y="397" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H41NvJang9ZAcuZ1YOfE-2" value="HRManager" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="100" width="165" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="H41NvJang9ZAcuZ1YOfE-4" value="+ recruit()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H41NvJang9ZAcuZ1YOfE-2">
+          <mxGeometry y="29" width="165" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="H41NvJang9ZAcuZ1YOfE-3" value="+ isQualified()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2" vertex="1" parent="H41NvJang9ZAcuZ1YOfE-2">
+          <mxGeometry y="49" width="165" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="H41NvJang9ZAcuZ1YOfE-5" value="HRManagerA" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="290" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H41NvJang9ZAcuZ1YOfE-6" value="+ isQualified()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="H41NvJang9ZAcuZ1YOfE-5">
+          <mxGeometry y="29" width="165" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="H41NvJang9ZAcuZ1YOfE-7" value="" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;startArrow=oval;startFill=0;startSize=8;endArrow=none;rounded=0;dashed=1;dashPattern=8 8;exitX=0.6;exitY=0.65;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="H41NvJang9ZAcuZ1YOfE-8">
+          <mxGeometry x="-0.0549" y="19" relative="1" as="geometry">
+            <mxPoint x="318" y="143" as="sourcePoint" />
+            <mxPoint x="452" y="155" as="targetPoint" />
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H41NvJang9ZAcuZ1YOfE-8" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;// some code...&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;this.isQualified();&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;// some code...&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=middle;align=left;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="1">
+          <mxGeometry x="460" y="130" width="196" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="H41NvJang9ZAcuZ1YOfE-11" value="HRManagerB" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=29;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="290" width="165" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H41NvJang9ZAcuZ1YOfE-12" value="+ isQualified()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="H41NvJang9ZAcuZ1YOfE-11">
+          <mxGeometry y="29" width="165" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="H41NvJang9ZAcuZ1YOfE-13" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;edgeStyle=elbowEdgeStyle;elbow=vertical;labelBackgroundColor=none;fontColor=default;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="H41NvJang9ZAcuZ1YOfE-11" target="H41NvJang9ZAcuZ1YOfE-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="233" y="300" as="sourcePoint" />
+            <mxPoint x="318" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
