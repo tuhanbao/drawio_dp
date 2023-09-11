@@ -1,0 +1,116 @@
+#表名	别名	对象描述	模块	缓存	主键生成方式	默认排序字段	索引	其他	字段名称	别名	字段类型	长度	是否可以过滤	校验器	主外键信息	默认值	备注	zh	en
+
+base
+#key	value	type	desc
+#need_create_config	0		此参数用于控制本配置文件是否生成java文件，默认为是
+pattern	debug	String	
+admin_mobile		String	管理员手机号码，逗号分隔
+is_maintaining	0		1代表服务器维护中
+white_list		String	ip白名单，支持正则
+check_code_over_time_mins	20		验证码过期时间
+is_distributed	1		
+
+language
+#语言资源	default	en
+YES	是	yes
+NO	否	no
+
+types
+#名称	值（Y：需要写语言资源）	default	en
+
+db
+#数据库配置，竖表, name必须在首行配置	
+name	data
+url	jdbc:mysql://127.0.0.1:3306/XXX?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+username	XXX
+password	XXX
+max-active	100
+initial-size	10
+max-wait	5000
+min-idle	1
+time-between-eviction-runs-millis	60000
+min-evictable-idle-time-millis	300000
+validation-query	select 1
+test-while-idle	TRUE
+max-pool-prepared-statement-per-connection-size	20
+break-after-acquire-failure	FALSE
+connection-error-retry-attempts	3
+notfull-timeout-retry-count	3
+
+
+error_code
+#名称	key	zh	en
+NO_ERROR	0	操作成功	Operation succeeded.
+ERROR	-1	系统错误	System error.
+JOSN_ERROR	1	json错误	json error.
+HTTP_CODE_NULL	2	http请求命令码为空	The http request command code is empty.
+INIT_CONFIGFILE_ERROR	3	初始化配置文件错误	Configuration file initialization error.
+COMMAND_CODE_ISNOT_EXIST	4	命令码不存在	The command code does not exist.
+ILLEGAL_ARGUMENT	5	参数错误	Parameter error.
+INDEX_OUTOF_BOUND	6	数组越界	Index out of bounds.
+FILE_NOT_EXISTS	7	文件不存在	File not exist.
+DB_CREATE_CONNECTION_ERROR	32	数据库连接错误	Database connection error.
+DB_CONNECTIONS_FULL	33	数据库连接已满	The quantity of database connections already reaches the upper limit.
+DB_ERROR	34	数据库一般错误	Database error.
+DB_COMMIT_ERROR	35	数据库提交事务出错	Database transaction submission error.
+DB_ROLLBACK_ERROR	36	数据库回滚出错	Database rollback error.
+MO_NOT_EXIST_WHEN_UPDATE	37	更新MO时不存在	The MO to be updated does not exist.
+MO_DELETE_COUNT_ERROR	38	删除MO时存在多个	Multiple duplicate MOs exist during MO deletion.
+MO_UPDATE_CONFLICT	39	MO冲突	MO conflict occurs.
+			
+#业务错误			
+#公共			
+ILLEGAL_INCOMING_ARGUMENT	101	参数错误。	Parameter error.
+ONLINE_PLAYERS_FULL	102	在线人数过多，请稍候。	The quantity of online users exceeds the upper limit. Please wait.
+SERVER_IS_BUSY	103	系统繁忙。	The system is busy.
+SERVER_IN_AFFAIR	104	对不起，系统正在维护，抱歉给您带来了不便，请在30秒后进行重试。	Sorry, the system is under maintenance. Please try again 30 seconds later.
+SERVER_IS_MAINTAINING	105	系统正在维护中，请稍候。	The system is under maintenance. Please wait.
+PLAYER_ISNOT_EXIST	106	用户不存在	The user does not exist.
+HAVE_NO_RIGHT	107	您没有权限执行此操作。	You are not authorized to perform this operation.
+VERSION_IS_TOO_OLD	109	您的版本太低，请下载最新版本。	Your version is not up-to-date. Please download the latest version.
+NO_NETWORK	110	您未连接到网络。	The network is not connected.
+NETWORK_TIMEOUT	111	网络连接超时。	Network connection timed out.
+EXCUTE_CMD_ERROR	112	执行cmd命令错误	CMD command execution error.
+SERVER_IS_MAINTAINING_BY_MIN	113	系统正在维护中，大约还需要{0}分钟。	The system is under maintenance and will finish in about {0} minute(s).
+SERVER_IS_MAINTAINING_BY_HOUR	114	系统正在维护中，大约还需要{0}小时。	The system is under maintenance and will finish in about {0} hour(s).
+RESPONSE_TIMEOUT	115	返回超时	Response timed out.
+NETWORK_LINK_ERROR	116	网络连接错误	Network connection error.
+NO_SESSION	117	会话不存在	System error. Please try again later.
+			
+#登录			
+USER_LOCKED	201	用户被锁	
+PASSWORD_INVALID	202	密码无效,长度必须为{0}到{1}位。	The password is invalid. The password length must range from {0} to {1} characters.
+PASSWORD_WRONG	203	密码错误。	Password error.
+USER_ISNOT_EXIST	204	用户不存在。	The user does not exist.
+INVALID_ACCOUNT	205	无效的账号。账号只能为邮箱或者是英文字母，数字和下划线的组合。	The user name is invalid. The account can only be an email address or any combination of letters, digits, and underscores (_).
+ACCOUNT_LENGTH_ERROR	206	账户名过长，请重新输入。	The length of the user name exceeds the upper limit. Please re-enter the user name.
+ACCOUNT_IS_EXIST	207	账户名已存在。	The user name already exists.
+PLEASE_LOGIN_FIRST	208	请先登录。	Please log in first.
+GET_VERIFICATION_CODE_ERROR	209	验证码出错。	Failed to get the captcha.
+INVALID_VERIFICATION	210	无效的验证码。	Invalid captcha.
+WRONG_VERIFICATION	211	验证码错误。	Incorrect captcha.
+PLAYER_LOGIN_TWICE	212	您在账号已在其他设备上登录，您的密码很可能已经泄露，请及时修改您的密码，以确保您的账号安全。	You are logged out because your account has logged in at {0}.
+AUTHCODE_GET_FAIL	213	验证码获取失败	Failed to get the authentication code.
+AUTHCODE_VAL_FAIL	214	验证码验证失败	Captcha verification failed.
+AUTHCODE_IS_EXPIRE	215	验证码已过期，请重新获取	The captcha is expired. Please try again.
+NO_AUTHCODE	216	验证码不存在	The captcha does not exist.
+AUTHCODE_SEND_TOO_MANY	217	验证码获取频繁	Captcha obtained too frequently.
+RESEND_AUTHCODE	218	请重新发送验证码	Please resend the captcha.
+NO_RECORD_DATA	219	没有数据	No data.
+			
+#校验器错误			
+RANGE_ERROR	301	{0}的取值范围必须为{1}到{2}。	The value of {0} must range from {1} to {2}.
+BLANK_ERROR	302	{0}不能为空。	The {0} cannot be empty.
+PAST_ERROR	303	{0}不在当前时间之前。	{0} cannot be earlier than the current time.
+FUTURE_ERROR	304	{0}不在当前时间之后。	{0} cannot be later than the current time.
+PATTERN_ERROR	305	{0}格式不对。	The format of {0} is incorrect.
+IPV4_ERROR	306	{0}ip格式不对。	The IP address format of {0} is incorrect.
+MAX_ERROR	307	{0}的值不能大于{1}。	The value of {0} cannot be greater than {1}.
+MIN_ERROR	308	{0}的值不能小于{1}。	The value of {0} cannot be smaller than {1}.
+EMAIL_ERROR	309	{0}不是合法的email地址。	The {0} is not a valid email address.
+LENGTH_ERROR	310	{0}的长度范围必须为{1}~{2}。	The length of {0} must be {1} to {2} characters.
+MAX_LENGTH_ERROR	311	{0}的长度不能大于{1}。	The length of {0} cannot exceed {1} characters.
+MIN_LENGTH_ERROR	312	{0}的长度不能小于{1}。	The length of {0} cannot be less than {1} characters.
+EMPTY_ERROR	313	{0}不能为空。	{0} cannot be empty.
+FK_ERROR	314	{0}不存在。	{0} does not exist.
+UNIQUE_ERROR	315	{0}已存在。	{0} already exists.
